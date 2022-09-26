@@ -1,4 +1,4 @@
-# Banque
+# ShapeDecorator Exercise 
 Exercice sur les design pattern en Java
 Exercice sur le pattern des decorators
 
