@@ -11,13 +11,13 @@ public class Main {
                 = new RedShapeDecorator(new Circle());
         Shape redRectangle
                 = new RedShapeDecorator(new Rectangle());
-        System.out.println("Circle with normal border");
+        System.out.println("Cercle sans bordure");
         circle.draw();
-        System.out.println("\nRectangle with normal border");
+        System.out.println("\nRectangle sans bordure");
         rectangle.draw();
-        System.out.println("\nCircle of red border");
+        System.out.println("\nCercle de bordure rouge");
         redCircle.draw();
-        System.out.println("\nRectangle of red border");
+        System.out.println("\nRectangle de bordure rouge");
         redRectangle.draw();
     }
 }
