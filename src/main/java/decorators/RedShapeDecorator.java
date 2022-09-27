@@ -3,8 +3,8 @@ package decorators;
 import interfaces.Shape;
 
 public class RedShapeDecorator extends ShapeDecorator {
-    public RedShapeDecorator(Shape decoratedShape) {
-        super(decoratedShape);
+    public RedShapeDecorator(Shape shape) {
+        super(shape);
     }
     /*
     *redéfinition de la méthode draw pour la classe redshapedecorator
@@ -12,13 +12,13 @@ public class RedShapeDecorator extends ShapeDecorator {
      */
     @Override
     public void draw() {
-        decoratedShape.draw();
-        setRedBorder(decoratedShape);
+        shape.draw();
+        setRedBorder(shape);
     }
     /*
     *méthode invoquant la bordure de couleur rouge
      */
-    private void setRedBorder(Shape decoratedShape) {
+    private void setRedBorder(Shape shape) {
         System.out.println("avec une bordure de couleur rouge");
     }
 }
