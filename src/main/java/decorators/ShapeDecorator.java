@@ -7,16 +7,16 @@ public abstract class ShapeDecorator implements Shape {
      * instanciation d'un attribut de type shape, permet de différencier
      * l'objet crée en fonction de sa forme
      */
-    protected Shape decoratedShape;
+    protected Shape shape;
 
-    public ShapeDecorator(Shape decoratedShape) {
-        this.decoratedShape = decoratedShape;
+    public ShapeDecorator(Shape shape) {
+        this.shape = shape;
     }
 /*
 *redéfinition de la méthode draw() en fonction de la forme "shape"
 * rentrée en argument à la méthode
  */
     public void draw() {
-        decoratedShape.draw();
+        shape.draw();
     }
 }
